@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class gMapa : MonoBehaviour
 {
     public string nombreEsena;
-    public int bb = 0;
+    public int bb = 2;
     public int mx=4;
     public int cuartoX,cuartoY;
     public GameObject[] piso, o1, o2, o3, o4, o5, o6, o7, o8, o9, o10, o11;
@@ -23,11 +23,11 @@ public class gMapa : MonoBehaviour
 
     private void Awake()
     {
-        loadData();
+       // loadData();
     }
     private void OnDestroy()
     {
-        seveData();
+        //seveData();
     }
     // Start is called before the first frame update
     void Start()

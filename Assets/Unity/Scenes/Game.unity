@@ -1871,15 +1871,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4333689560348609832, guid: 4839a002ecd46214dbf4def97f929060, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.333252
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4333689560348609832, guid: 4839a002ecd46214dbf4def97f929060, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000030517578
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 4333689560348609832, guid: 4839a002ecd46214dbf4def97f929060, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 120.98517
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4333689560348609832, guid: 4839a002ecd46214dbf4def97f929060, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3597,14 +3597,18 @@ MonoBehaviour:
   basura:
   - {fileID: 919132149155446097, guid: 05c9ea986384f6f488235c4c2908c88e, type: 3}
   - {fileID: 919132149155446097, guid: 05c9ea986384f6f488235c4c2908c88e, type: 3}
+  - {fileID: 919132149155446097, guid: 05c9ea986384f6f488235c4c2908c88e, type: 3}
+  - {fileID: 919132149155446097, guid: 05c9ea986384f6f488235c4c2908c88e, type: 3}
+  - {fileID: 919132149155446097, guid: 05c9ea986384f6f488235c4c2908c88e, type: 3}
+  - {fileID: 919132149155446097, guid: 05c9ea986384f6f488235c4c2908c88e, type: 3}
   posiones:
   - {fileID: 1238850232585549198, guid: 788c69238d08cbe4db3d5b701206db7e, type: 3}
   - {fileID: 1008676332221297913, guid: 1cabd0536b6f7404e99c70b942148a85, type: 3}
   enemigo:
   - {fileID: 7481687635745748329, guid: 8db5819b912157c469aabf363852015b, type: 3}
-  - {fileID: 7809164925873454708, guid: 18cc96524b1e65a4e8b64a94603668e5, type: 3}
-  - {fileID: 8256066491482029755, guid: aea453b137f62b849bd9b01dd9d16c84, type: 3}
-  bbb: 0
+  - {fileID: 7481687635745748329, guid: 8db5819b912157c469aabf363852015b, type: 3}
+  - {fileID: 7481687635745748329, guid: 8db5819b912157c469aabf363852015b, type: 3}
+  bbb: 2
   mapa: {fileID: 1686861531}
 --- !u!114 &1686861531
 MonoBehaviour:
@@ -3619,7 +3623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreEsena: 
-  bb: 0
+  bb: 2
   mx: 4
   cuartoX: 0
   cuartoY: 0

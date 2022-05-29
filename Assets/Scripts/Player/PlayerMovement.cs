@@ -67,12 +67,12 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "Portal")
         {
             //Logica de Gus
-            mapa = FindObjectOfType<gMapa>();
-            mapa.finNivel();
+            //mapa = FindObjectOfType<gMapa>();
+            //mapa.finNivel();
 
 
             //Salir de la escena a victoria
-            //SceneManager.LoadScene("Victory");
+            SceneManager.LoadScene("Victory");
 
         }
     }
