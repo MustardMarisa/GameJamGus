@@ -32,6 +32,8 @@ public class Stats : MonoBehaviour
         if (vida < 0)
         {
             vida = 0;
+            //Game over
+            //SceneManager.LoadScene("GameOver");
         }
     }
 

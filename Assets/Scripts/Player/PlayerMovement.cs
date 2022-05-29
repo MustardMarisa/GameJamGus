@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
 
             //Salir de la escena a victoria
-            //SceneManager.LoadScene("Cube");
+            //SceneManager.LoadScene("Victory");
 
         }
     }
