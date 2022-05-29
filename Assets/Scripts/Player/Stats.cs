@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Stats : MonoBehaviour
 {
     public static Stats instance;
@@ -33,7 +34,7 @@ public class Stats : MonoBehaviour
         {
             vida = 0;
             //Game over
-            //SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
