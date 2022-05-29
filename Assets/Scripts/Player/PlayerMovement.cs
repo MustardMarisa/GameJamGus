@@ -15,6 +15,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
+    [Header("Sonidos footsteps")]
+    [SerializeField] private float baseStepSpeed = 0.5f;
+    [SerializeField] private float sprintMultiplier = 0.6f;
+    [SerializeField] private AudioSource footstepsAudioSource = default;
+    [SerializeField] private AudioClip[] stepsClips = default;
+    private float footstepTimer = 0;
+    //private float GetCurrentOffset => baseStepSpeed || baseStepSpeed *sprintMultiplier
+
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +41,18 @@ public class PlayerMovement : MonoBehaviour
         //aplicamos movimiento
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
+
+        //aplicamos sonido
+        footstepTimer -= Time.deltaTime;
+        if(footstepTimer <= 0 && (x>0||z>0))
+        {
+            footstepsAudioSource.PlayOneShot(stepsClips[Random.Range(0, stepsClips.Length - 1)]);
+            footstepTimer = baseStepSpeed;
+            if (speed == 5)
+            {
+                footstepTimer = baseStepSpeed * sprintMultiplier;
+            }
+        }
         
         //aplicamos gravedora
         velocity.y += gravity * Time.deltaTime;
