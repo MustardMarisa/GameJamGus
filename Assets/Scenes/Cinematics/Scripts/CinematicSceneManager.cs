@@ -29,8 +29,7 @@ public class CinematicSceneManager : MonoBehaviour
     private void MakeSceneTransition()
     {
         if (SceneManager.GetActiveScene().name == "GameIntro")
-            //SceneManager.LoadScene("MainGameScene");
-            Debug.Log("Cargar Escena principal");
+            SceneManager.LoadScene("Game");
 
         else if (SceneManager.GetActiveScene().name == "MainIntro")
             SceneManager.LoadScene("MainMenu");

@@ -43,4 +43,9 @@ public class MenuFunctions : MonoBehaviour
     {
         SceneManager.LoadScene("GameCredits");
     }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("GameTutorial");
+    }
 }

@@ -17,13 +17,11 @@ public class GameOverFunctions : MonoBehaviour
 
     public void StartGame()
     {
-        //SceneManager.LoadScene("MainGame");
-        Debug.Log("Llamada a la pantalla del juego principal");
+        SceneManager.LoadScene("Game");
     }
 
     public void Quit()
     {
-        Debug.Log("Cerrar el juego");
         Application.Quit();
     }
 }

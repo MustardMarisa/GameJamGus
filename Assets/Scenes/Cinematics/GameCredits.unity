@@ -248,7 +248,7 @@ PrefabInstance:
     - target: {fileID: 825365386638808817, guid: 1043ab1bd88bdee4ba068c9a278df30b, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 6c96504c9a3ca6547b16916c47923670, type: 3}
+      objectReference: {fileID: 32900000, guid: 7d5793d0372353e4f8ba4728101b61fb, type: 3}
     - target: {fileID: 825365387384895146, guid: 1043ab1bd88bdee4ba068c9a278df30b, type: 3}
       propertyPath: m_Name
       value: Cinematica
