@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
     private void enemyAttack()
     {
         m_Animator.SetBool("Attack", true);
-        enemyAudioSource.PlayOneShot(clips[0]);
+        //enemyAudioSource.PlayOneShot(clips[0]);
         statsplayer.removevida(20);
         m_Animator.SetBool("Run", false);
         player.transform.position = new Vector3(-5, 0, 0);
@@ -85,13 +85,12 @@ public class Enemy : MonoBehaviour
                 agent.SetDestination(player.transform.position);
                 m_Animator.SetBool("Run",true);
 
-                runSoundTimer -= Time.deltaTime;
+                /*runSoundTimer -= Time.deltaTime;
                 if (runSoundTimer <= 0)
                 {
-                    Debug.Log("PLAY");
                     enemyAudioSource.PlayOneShot(clips[1]);
                     runSoundTimer = clips[1].length;
-                }
+                }*/
                 
             }
         }
