@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cinematics/Victory.unity
     guid: 791d57efbf9101646a8a0e68f77cc7e7
+  - enabled: 1
+    path: Assets/Scenes/Cinematics/GameTutorial.unity
+    guid: 34c2a04574ecc4740b4132850c2600ba
   m_configObjects: {}
