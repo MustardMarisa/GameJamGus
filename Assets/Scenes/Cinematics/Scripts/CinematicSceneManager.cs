@@ -39,5 +39,8 @@ public class CinematicSceneManager : MonoBehaviour
 
         else if (SceneManager.GetActiveScene().name == "Victory")
             SceneManager.LoadScene("GameCredits");
+
+        else if (SceneManager.GetActiveScene().name == "GameTutorial")
+            SceneManager.LoadScene("MainMenu");
     }
 }

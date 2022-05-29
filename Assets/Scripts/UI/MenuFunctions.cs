@@ -8,6 +8,7 @@ public class MenuFunctions : MonoBehaviour
     [SerializeField] private GameObject startButton;
     [SerializeField] private GameObject creditsButton;
     [SerializeField] private GameObject quitButton;
+    [SerializeField] private GameObject tutorialButton;
     [SerializeField] private GameObject villanoFuego;
     [SerializeField] private GameObject villanoHielo;
 
@@ -25,8 +26,9 @@ public class MenuFunctions : MonoBehaviour
 
         //Buttons
         LeanTween.scale(startButton, new Vector3(1, 1, 1), 1f).setEaseLinear().setDelay(3f);//setEase(LeanTweenType.easeInOutExpo).setDelay(3f);
-        LeanTween.scale(creditsButton, new Vector3(1, 1, 1), 1f).setEaseLinear().setDelay(4f);
-        LeanTween.scale(quitButton, new Vector3(1, 1, 1), 1f).setEaseLinear().setDelay(5f);
+        LeanTween.scale(tutorialButton, new Vector3(1, 1, 1), 1f).setEaseLinear().setDelay(4f);
+        LeanTween.scale(creditsButton, new Vector3(1, 1, 1), 1f).setEaseLinear().setDelay(5f);
+        LeanTween.scale(quitButton, new Vector3(1, 1, 1), 1f).setEaseLinear().setDelay(6f);
     }
 
     public void StartGame()
