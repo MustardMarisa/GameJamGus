@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     private float footstepTimer = 0;
     //private float GetCurrentOffset => baseStepSpeed || baseStepSpeed *sprintMultiplier
 
+    public gMapa mapa;
+
     // Update is called once per frame
     void Update()
     {
@@ -57,5 +59,20 @@ public class PlayerMovement : MonoBehaviour
         //aplicamos gravedora
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Portal")
+        {
+            //Logica de Gus
+            mapa = FindObjectOfType<gMapa>();
+            mapa.finNivel();
+
+
+            //Salir de la escena a victoria
+            //SceneManager.LoadScene("Cube");
+
+        }
     }
 }
