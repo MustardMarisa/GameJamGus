@@ -28,29 +28,36 @@ public class Inventory_Items : MonoBehaviour
 
     public void curacion()
     {
-        for (int i = 0; i < inventory.items.Length; i++)
-        {
-            if (inventory.items[i].lleno == false)
+        for (int id = 0; id < inventory.items.Length; id++) { 
+            if (inventory.items[id].lleno == true && inventory.items[id].type == TipoItems.Moneda && inventory.items[id].cantidad < 6)
             {
-                inventory.items[i].lleno = true;
-                inventory.items[i].cantidad = 1;
-                inventory.items[i].type = TipoItems.PocionFuego;
-                inventory.items[i].nombre = "Fuego";
-                inventory.items[i].textslot.text = inventory.items[i].cantidad.ToString();
-                inventory.items[i].slot.GetComponent<Image>().sprite = pocioncuracion;
-                inventory.items[i].slot.GetComponent<Image>().enabled = true;
-                break;
-            }
+                for (int i = 0; i < inventory.items.Length; i++)
+                {
+                    if (inventory.items[i].lleno == false)
+                    {
+                        inventory.items[i].lleno = true;
+                        inventory.items[i].cantidad = 1;
+                        inventory.items[i].type = TipoItems.PocionFuego;
+                        inventory.items[i].nombre = "Fuego";
+                        inventory.items[i].textslot.text = inventory.items[i].cantidad.ToString();
+                        inventory.items[i].slot.GetComponent<Image>().sprite = pocioncuracion;
+                        inventory.items[i].slot.GetComponent<Image>().enabled = true;
+                        break;
+                    }
 
-            if (inventory.items[i].lleno == true && inventory.items[i].type == TipoItems.PocionFuego && inventory.items[i].cantidad < 64)
-            {
-                Debug.Log("Item estanqueado");
-                inventory.items[i].cantidad += 1;
-                inventory.items[i].textslot.text = inventory.items[i].cantidad.ToString();
-                break;
-            }
+                    if (inventory.items[i].lleno == true && inventory.items[i].type == TipoItems.PocionFuego && inventory.items[i].cantidad < 64)
+                    {
+                        Debug.Log("Item estanqueado");
+                        inventory.items[i].cantidad += 1;
+                        inventory.items[i].textslot.text = inventory.items[i].cantidad.ToString();
+                        break;
+                    }
 
+                }
+
+            }
         }
+        
     }
 
     public void stamina()
