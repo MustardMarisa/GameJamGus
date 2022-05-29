@@ -2085,7 +2085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5fd6f4db5b9c4b4fab9c8f3a0054713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1116524675926439817, guid: 07e3338462179b74bb231290fc75bd92, type: 3}
   enemyAudioSource: {fileID: 7716111548207374915}
   clips:
   - {fileID: 8300000, guid: e3f046cfbeefdd844a3d5a136a55891d, type: 3}
