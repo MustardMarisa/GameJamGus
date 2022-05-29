@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5968236124130035851}
+  - component: {fileID: 854990506841262296}
+  - component: {fileID: 3186716886918904850}
   m_Layer: 0
   m_Name: L3
   m_TagString: Untagged
@@ -23,66 +25,32 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4208064288310887}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8560357, y: 2.8902378, z: -2.0517313}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3020884532683050977}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2497112775247779163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3020884532683050977}
-  - component: {fileID: 2180742703825059908}
-  - component: {fileID: 4154424036972328078}
-  m_Layer: 0
-  m_Name: PISO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3020884532683050977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2497112775247779163}
   m_LocalRotation: {x: 0.00000013315807, y: 1, z: 0.00000013315807, w: -0.00000007549788}
-  m_LocalPosition: {x: 6.8560357, y: -2.8902378, z: 2.0517313}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -400, y: -23.838533, z: -400}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5901380912181520990}
   - {fileID: 5021569364591983249}
-  - {fileID: 7725180738537537125}
-  m_Father: {fileID: 5968236124130035851}
+  - {fileID: 9127492745284712185}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2180742703825059908
+--- !u!33 &854990506841262296
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2497112775247779163}
+  m_GameObject: {fileID: 4208064288310887}
   m_Mesh: {fileID: -269924734278799296, guid: 26dc9879cd308e1489ff004a39aa88b9, type: 3}
---- !u!23 &4154424036972328078
+--- !u!23 &3186716886918904850
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2497112775247779163}
+  m_GameObject: {fileID: 4208064288310887}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -118,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5188993087006155702
+--- !u!1 &6745553319704128298
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,10 +94,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7725180738537537125}
-  - component: {fileID: 1676774399294975612}
-  - component: {fileID: 2138147374465151737}
-  - component: {fileID: 5992137015244518655}
+  - component: {fileID: 9127492745284712185}
+  - component: {fileID: 205791020467381984}
+  - component: {fileID: 590601623071603301}
+  - component: {fileID: 5095361627906128995}
   m_Layer: 0
   m_Name: P34
   m_TagString: Untagged
@@ -137,36 +105,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7725180738537537125
+--- !u!4 &9127492745284712185
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5188993087006155702}
+  m_GameObject: {fileID: 6745553319704128298}
   m_LocalRotation: {x: -1, y: 0.00000013315807, z: -0.00000007549788, w: 0.00000013315807}
   m_LocalPosition: {x: 0, y: -0.000336847, z: 0}
   m_LocalScale: {x: -1, y: -1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3020884532683050977}
+  m_Father: {fileID: 5968236124130035851}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1676774399294975612
+--- !u!33 &205791020467381984
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5188993087006155702}
+  m_GameObject: {fileID: 6745553319704128298}
   m_Mesh: {fileID: 3306989752359717168, guid: 9e3dc75b7d8d4fd40b01b36a9d39f62a, type: 3}
---- !u!23 &2138147374465151737
+--- !u!23 &590601623071603301
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5188993087006155702}
+  m_GameObject: {fileID: 6745553319704128298}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -202,13 +170,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!208 &5992137015244518655
+--- !u!208 &5095361627906128995
 NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5188993087006155702}
+  m_GameObject: {fileID: 6745553319704128298}
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
@@ -249,7 +217,7 @@ Transform:
   m_LocalScale: {x: -1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3020884532683050977}
+  m_Father: {fileID: 5968236124130035851}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7721135810744613038
@@ -349,7 +317,7 @@ Transform:
   m_LocalScale: {x: -1, y: -1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3020884532683050977}
+  m_Father: {fileID: 5968236124130035851}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4161450465243376264
